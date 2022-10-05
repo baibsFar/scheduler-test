@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Task } from '../../types/task.model'
 
-export default function TaskComponent () {
+import './task.component.scss'
+
+export default function Task () {
 
 	const [task, setTask] = useState(new Task())
 
