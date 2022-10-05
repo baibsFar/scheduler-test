@@ -1,4 +1,4 @@
-import { User } from './User'
+import { User } from './user.model'
 
 type Nullable<T> = T | null
 
@@ -12,6 +12,24 @@ export class Task {
     private _endDate: Date | Nullable<Date> = null
     private _priority: Priority = 1 //  Task is by default MEDIUM priority
     private _beforeStartingNotificationTime: number = 0 //  n minutes before notification
+
+    constructor (
+        _name: string,
+        _description: string,
+        _participants: User[] | Nullable<User[]>,
+        _startDate: Date | Nullable<Date>,
+        _endDate: Date | Nullable<Date>,
+        _priority: Priority,
+        _beforeStartingNotificationTime: number
+    ) {
+        this._name = _name
+        this._description = _description
+        this._participants = _participants
+        this._startDate = _startDate
+        this._endDate = _endDate
+        this._priority = _priority
+        this._beforeStartingNotificationTime = _beforeStartingNotificationTime
+    }
 
     /* Getters and Setters */
     public get name (): string { return this._name }
