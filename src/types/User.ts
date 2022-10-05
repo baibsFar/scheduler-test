@@ -1,4 +1,4 @@
-export default class User {
+export class User {
     private _firstname: string = ''
     private _lastname: string = ''
     private _email: string = ''

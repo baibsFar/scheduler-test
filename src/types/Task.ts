@@ -1,10 +1,10 @@
-import User from "./User"
+import { User } from './User'
 
 type Nullable<T> = T | null
 
 enum Priority { LOW, MEDIUM, HIGH }
 
-export default class Task {
+export class Task {
     private _name: string = ''
     private _description: string = ''
     private _participants: User[] | Nullable<User[]> = []
