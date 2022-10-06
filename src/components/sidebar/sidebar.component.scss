@@ -1,0 +1,120 @@
+@import '../../styles/variables';
+
+.SideBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: $dark-blue-20;
+    border-right: 1px solid $white-20;
+
+    .logo {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        svg {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            object-fit: fill;
+        }
+    }
+
+    .nav-links {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-link {
+            position: relative;
+            width: 34px;
+            height: 34px;
+            margin: 15px 0;
+            color: $white;
+            cursor: pointer;
+            transition: color .4s ease,
+                        transform .3s ease-in-out;
+
+            &:hover {
+                color: $light-blue;
+                transform: translateX(8px);
+            }
+        }
+    }
+
+    .dashboard-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        svg.dashboard {
+            position: relative;
+            margin-top: 15px;
+            width: 50px;
+            height: 50px;
+            object-fit: fill;
+            cursor: pointer;
+            color: $light-blue;
+            transition: color .4s ease,
+                        transform .3s ease-in-out;
+
+            &:hover {
+                color: $pink;
+                scale: 1.1;
+            }
+        }
+
+        .help-info {
+            
+            svg {
+                position: relative;
+                padding: 5px;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                border: 1px solid $white;
+                cursor: pointer;
+                color: $white;
+                transition: color .4s ease,
+                            transform .3s ease-in-out,
+                            border .3s ease-in-out;
+
+                &:hover {
+                    color: $light-blue;
+                    transform: translateX(8px);
+                    border: 1px solid $light-blue;
+                }
+            }
+        }
+    }
+}
+
+.side-line {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid $white-42;
+}
