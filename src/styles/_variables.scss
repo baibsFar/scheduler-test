@@ -1,0 +1,19 @@
+/* Main Colors */
+$dark-blue: #2A2A48;
+$pink: #ED356C;
+$yellow: #FAC819;
+$green: #77DD77;
+$light-blue: #6B6BE2;
+$white: #FFF;
+
+/* Secondary Colors */
+$white-20: rgba(255, 255, 255, 0.2);    //  border color sidebar: dark mode
+$white-42: rgba(255, 255, 255, 0.42);   //  linecolor (after scheduler): dark mode
+$dark-blue-20: rgba(42, 42, 72, 0.2);   //  border color sidebar: light mode
+$dark-blue-42: rgba(42, 42, 72, 0.42);  //  line color (after scheduler): light mode
+$dark-blue-60: rgba(42, 42, 72, 0.6);   //  Filter color: ligh mode
+
+/* Font Size */
+$txt-normal: clamp(14px, 3vw, 18px);
+$txt-title: clamp(30px, 6vw, 36px);
+$txt-subtitle: clamp(26px, 4vw, 28px);

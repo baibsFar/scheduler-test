@@ -1,3 +1,10 @@
+@import './styles/variables';
+
+@font-face {
+  font-family: Quicksand;
+  src: url(./fonts/Quicksand-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +12,16 @@
   line-height: 1;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: Quicksand, sans-serif;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+p { font-size: $txt-normal; }
+
+h1 { font-size: $txt-title; }
+
+h3 { font-size: $txt-subtitle; }
